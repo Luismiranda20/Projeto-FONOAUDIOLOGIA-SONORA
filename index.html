@@ -1,1 +1,79 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Essenza | Fonoaudiologia integrada</title><link rel="stylesheet" href="/static/style.css"><script defer src="/static/app.js"></script></head><body><header><a class="brand" href="#inicio">◉ essenza<span>FONOAUDIOLOGIA INTEGRADA</span></a><nav><a href="#servicos">Especialidades</a><a href="#experiencia">Experiência</a><a href="#duvidas">Dúvidas</a></nav><button data-book>Agendar consulta ↗</button></header><main id="inicio"><section class="hero"><div><p class="eyebrow">CUIDADO HUMANO · CIÊNCIA · COMUNICAÇÃO</p><h1>Sua voz.<br>Sua essência.<br><em>Seu mundo.</em></h1><p class="lead">Descubra novas possibilidades de comunicação com um atendimento fonoaudiológico individualizado, acolhedor e baseado em evidências.</p><div class="actions"><button data-book>Agendar avaliação ↗</button><a href="#servicos">Conhecer especialidades ↓</a></div><div class="tags">Atendimento individualizado <span>✦</span> Todas as fases da vida</div></div><div class="art"><div class="orb"></div><svg viewBox="0 0 500 400" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M0 200 Q40 200 55 170 T90 230 T125 100 T160 300 T195 40 T230 350 T265 90 T300 270 T335 150 T370 220 T405 190 T500 200"/><path opacity=".4" d="M0 210 Q50 210 80 160 T140 250 T200 100 T260 300 T320 150 T380 230 T500 210"/></g></svg><div class="artlabel"><small>O PODER DA COMUNICAÇÃO</small><strong>Conexões que<br>transformam.</strong></div><div class="chip">✳ &nbsp; Escuta ativa. Cuidado integral.</div></div></section><section id="servicos"><p class="eyebrow">01 / ESPECIALIDADES</p><h2>Cuidado em cada fase da vida.</h2><p class="muted">Encontre o atendimento adequado às suas necessidades.</p><div class="services" id="cards"></div></section><section id="experiencia" class="experience"><div><p class="eyebrow">02 / SUA JORNADA</p><h2>O primeiro passo<br>começa com você.</h2><p>Um processo transparente, com respeito ao seu ritmo e às suas necessidades.</p><button data-book>Começar minha jornada ↗</button></div><div class="steps"><article><b>01</b><div><h3>Solicite seu horário</h3><p>Escolha a especialidade e envie sua preferência.</p></div></article><article><b>02</b><div><h3>Avaliação individual</h3><p>Conheça suas necessidades junto ao profissional.</p></div></article><article><b>03</b><div><h3>Plano personalizado</h3><p>Defina objetivos e acompanhe sua evolução.</p></div></article></div></section><section id="duvidas"><p class="eyebrow">03 / PERGUNTAS FREQUENTES</p><h2>Estamos aqui para ouvir.</h2><details><summary>Como funciona a primeira consulta?</summary><p>O profissional realiza uma entrevista e avalia as necessidades de comunicação para orientar os próximos passos.</p></details><details><summary>Preciso de encaminhamento?</summary><p>Em geral, é possível procurar avaliação diretamente. Convênios podem ter regras próprias.</p></details><details><summary>Meu horário é confirmado automaticamente?</summary><p>Não. O formulário registra uma solicitação, sujeita à confirmação da clínica.</p></details></section></main><footer><a class="brand" href="#inicio">◉ essenza</a><p>Modelo demonstrativo · Clínica fictícia · Sem atendimento real.</p><button data-book>Solicitar consulta ↗</button></footer><dialog id="booking"><button class="close" aria-label="Fechar">×</button><p class="eyebrow">SUA JORNADA COMEÇA AQUI</p><h2>Solicitar consulta</h2><p class="muted">Escolha sua preferência. O horário não é uma confirmação.</p><form id="form"><label>Especialidade<select name="servico" required></select></label><div class="pair"><label>Data<input name="data" type="date" required></label><label>Horário<select name="horario" required><option>09:00</option><option>10:30</option><option>14:00</option><option>15:30</option><option>17:00</option></select></label></div><label>Nome<input name="nome" required maxlength="200" autocomplete="name"></label><label>E-mail<input name="email" type="email" required maxlength="200" autocomplete="email"></label><label>Telefone<input name="telefone" type="tel" required maxlength="30" autocomplete="tel"></label><label class="consent"><input type="checkbox" required> Concordo com o armazenamento dos dados para esta demonstração. Não informe dados reais.</label><button type="submit">Enviar solicitação ↗</button><p id="status" role="status"></p></form></dialog><button class="floating" data-book aria-label="Solicitar consulta">↗</button></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vox · Clínica de Fonoaudiologia</title>
+<meta name="description" content="Avaliação e terapia fonoaudiológica para crianças e adultos. Agende sua consulta online.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<header class="nav">
+  <a href="#topo" class="logo">Vox</a>
+  <nav><a href="#servicos">Serviços</a><a href="#triagem">Triagem</a><a href="#agendar" class="btn sm">Agendar consulta</a></nav>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <canvas id="onda" aria-hidden="true"></canvas>
+  <div class="hero-txt">
+    <p class="tag">Fonoaudiologia para todas as idades</p>
+    <h1>Cada voz tem<br>algo a dizer.</h1>
+    <p class="lead">Avaliação e terapia individual para fala, voz, linguagem, fluência e deglutição, presencial ou online.</p>
+    <div class="row">
+      <a href="#agendar" class="btn">Agendar consulta</a>
+      <button class="btn ghost" id="mic" type="button">Ver minha voz ao vivo</button>
+    </div>
+    <p class="hint" id="micHint" role="status">Use o microfone e veja a onda reagir. Nada é gravado.</p>
+  </div>
+</section>
+
+<section id="servicos" class="sec">
+  <h2>Serviços</h2>
+  <div class="grid">
+    <article class="card" id="s-avaliacao" data-id="avaliacao"><h3>Avaliação fonoaudiológica</h3><p>Primeira consulta para entender a queixa e definir o plano de cuidado.</p><span class="preco">R$ 220 · 60 min</span></article>
+    <article class="card" id="s-fala-linguagem" data-id="fala-linguagem"><h3>Fala e linguagem</h3><p>Terapia para atraso de fala, trocas de sons e dificuldades de comunicação.</p><span class="preco">R$ 180 · 45 min</span></article>
+    <article class="card" id="s-voz" data-id="voz"><h3>Voz profissional</h3><p>Cuidado vocal para professores, cantores, locutores e quem usa a voz no trabalho.</p><span class="preco">R$ 190 · 45 min</span></article>
+    <article class="card" id="s-fluencia" data-id="fluencia"><h3>Fluência e gagueira</h3><p>Técnicas de ritmo e respiração para falar com mais segurança.</p><span class="preco">R$ 180 · 45 min</span></article>
+    <article class="card" id="s-degluticao" data-id="degluticao"><h3>Deglutição e mastigação</h3><p>Avaliação e reabilitação de engasgos e dificuldades para se alimentar.</p><span class="preco">R$ 200 · 50 min</span></article>
+    <article class="card" id="s-aprendizagem" data-id="aprendizagem"><h3>Leitura e escrita</h3><p>Apoio a crianças com dificuldade de aprendizagem ligada à linguagem.</p><span class="preco">R$ 180 · 45 min</span></article>
+  </div>
+</section>
+
+<section id="triagem" class="sec split">
+  <div><h2>Qual serviço combina com você?</h2><p class="lead">Responda duas perguntas e receba uma indicação. Não substitui a avaliação profissional.</p></div>
+  <form id="formTriagem" class="panel" novalidate>
+    <fieldset><legend>Quem vai fazer o atendimento?</legend>
+      <label class="chip"><input type="radio" name="perfil" value="crianca" required><span>Uma criança</span></label>
+      <label class="chip"><input type="radio" name="perfil" value="adulto"><span>Um adulto</span></label></fieldset>
+    <fieldset><legend>Qual é a principal queixa?</legend>
+      <label class="chip"><input type="radio" name="queixa" value="fala" required><span>Fala e palavras</span></label>
+      <label class="chip"><input type="radio" name="queixa" value="voz"><span>Voz</span></label>
+      <label class="chip"><input type="radio" name="queixa" value="gagueira"><span>Gagueira</span></label>
+      <label class="chip"><input type="radio" name="queixa" value="degluticao"><span>Engasgos</span></label>
+      <label class="chip"><input type="radio" name="queixa" value="leitura"><span>Leitura e escrita</span></label></fieldset>
+    <button class="btn" type="submit">Ver indicação</button>
+    <p class="resultado" id="resTriagem" role="status"></p>
+  </form>
+</section>
+
+<section id="agendar" class="sec split">
+  <div><h2>Agende sua consulta</h2><p class="lead">Escolha o dia e o horário. Você recebe a confirmação pelo contato informado.</p></div>
+  <form id="formAgenda" class="panel" novalidate>
+    <label>Nome<input name="nome" autocomplete="name" required></label>
+    <label>WhatsApp ou e-mail<input name="contato" autocomplete="tel" required></label>
+    <label>Serviço<select name="servico" id="selServico" required></select></label>
+    <fieldset><legend>Dia</legend><div id="dias" class="chips"></div></fieldset>
+    <fieldset><legend>Horário</legend><div id="horas" class="chips"><span class="hint">Escolha um dia para ver os horários.</span></div></fieldset>
+    <button class="btn" type="submit">Confirmar agendamento</button>
+    <p class="resultado" id="resAgenda" role="status"></p>
+  </form>
+</section>
+</main>
+<footer><span class="logo">Vox</span><p>Clínica de Fonoaudiologia · Modelo de site. Substitua nome, contatos, preços e CRFa.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
